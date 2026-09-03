@@ -1,135 +1,280 @@
-# 🎬 Hardik — AI YouTube Video Factory & Automation Engine
+# 🎬 Hardik — Editorial AI YouTube Video Factory
 
-> **End-to-End Automated YouTube Production Pipeline**  
-> Frame-First • Master Character Identity • Multi-Angle Consistency • Sarvam AI TTS • Meme Placement • Automated 1080p Video Compilation
+> **Shot/Beat-first automated YouTube production system**  
+> Editorial Intelligence • Photorealistic Hardik • Multi-Angle Identity • Frame-First Veo • Sarvam AI • Evidence/B-roll • Memes • Dynamic Rendering • Google Vids • Automated QC
 
 ---
 
 ## 📌 Overview
 
-This repository contains the complete automated video production system tailored for **Hardik's YouTube Channel** (Investigative Documentary, Tech, Systems Architecture, and Business Explainer content).
+This repository contains Hardik's automated YouTube production system for investigative documentaries, explainers, technology, business, AI, systems and current-affairs content.
 
-It combines structured AI agent skills, a permanent master character reference system, Indian voiceover generation (Sarvam AI), an intelligent meme selection taxonomy, and automated Python/FFmpeg video rendering.
-
----
-
-## 🚀 Key Features & Architecture
+The production architecture has been rebuilt around an **editorial video-editor model**, not a presentation/slideshow model. The primary production skill is:
 
 ```text
-RESEARCH & KNOWLEDGE
-       ↓
-VIRAL SCRIPT ENGINE (Hooks, Open Loops, Stakes)
-       ↓
-MASTER CHARACTER IDENTITY LOCK (Permanent 10-Angle Visual Consistency)
-       ↓
-SARVAM AI AUDIO GENERATION (Persistent Caching & Timing Authority)
-       ↓
-MEME INTELLIGENCE PLACEMENT (248 Catalogued Clips)
-       ↓
-AUTOMATED VIDEO COMPILATION (1080p Motion Graphics, Subtitles, Concat)
-       ↓
-HIGH-CTR TITLES, THUMBNAILS & METADATA PACKAGING
+.agents/skills/hardik-editorial-video-factory/SKILL.md
 ```
 
-### 1. Master Character Identity Lock
-- Anchored by [Master_Character_Identity_Reference.pdf](./Master_Character_Identity_Reference.pdf) and [CHARACTER_IDENTITY_LOCK.md](./CHARACTER_IDENTITY_LOCK.md).
-- **Core Law**: *Identity is immutable; scene variables are mutable.*
-- 10-camera-angle photographic reference sheet providing spatial and facial consistency across all image models and video renders.
-
-### 2. Sarvam AI Voiceover Engine
-- Implemented in [sarvam_audio_service.py](./sarvam_audio_service.py).
-- High-fidelity Indian English and Hindi speech synthesis (`bulbul:v3` / `aditya` voice).
-- **Smart Credit-Saving Cache**: `{project_id}_{scene_id}_{voice}_{hash}.wav` prevents burning API credits on unchanged text.
-- **Timing Authority**: Auto-measures WAV duration to establish exact cut pacing for video scenes.
-
-### 3. Meme Intelligence & Cutaway System
-- Documented in [MEME_INTELLIGENCE_GUIDE.md](./MEME_INTELLIGENCE_GUIDE.md).
-- Taxonomy mapping narrative tension, surprise, corporate greed, and irony directly to video meme templates.
-
-### 4. Automated Video Compiler
-- Script: [build_full_documentary_video.py](./build_full_documentary_video.py).
-- Generates 1920x1080 presentation frames using Pillow, applies smooth Ken Burns zoompan camera motion, overlays character badges and subtitles, and merges meme cutaways into a final master MP4 video.
-
-### 5. Production Showcase: The UPI Scam Documentary
-Full case study and production artifacts inside [`output/upi_is_scam_production/`](./output/upi_is_scam_production/):
-- **01_COMPREHENSIVE_RESEARCH_BRIEF.md**: Mathematical proof of Cash amortization (₹0.005/txn) vs. UPI Linear Cost (₹2/txn), Zero-MDR subsidy collapse, and 2026 Supreme Court / RBI MuleHunter.AI updates.
-- **02_HIGH_CTR_TITLE_PACKAGES.md**: 10 scored title concepts.
-- **03_THUMBNAIL_PACKAGING_SYSTEM.md**: 3 viral compositions with prompt locks.
-- **04_MASTER_VIRAL_SCRIPT.md**: Full 12–14 minute script with camera cues and meme triggers.
-- **05_VIDEO_PRODUCTION_MANIFEST.json**: Scene-by-scene manifest with character prompts and audio blocks.
-- **06_YOUTUBE_DESCRIPTION_AND_METADATA.md**: Chapters, helplines (1930), and pinned comment.
+That skill is the single source of truth for video-production decisions. Superseded video-factory and visual-director skills have been removed to prevent conflicting instructions.
 
 ---
 
-## 🛠️ Setup & Installation
+## 🧠 Primary Architecture
 
-### Prerequisites
-- Python 3.10+
-- FFmpeg (or `imageio-ffmpeg`)
-- Git
-
-### Installation
-```bash
-# Clone the repository
-git clone https://github.com/hardik140/youtube-automation.git
-cd youtube-automation
-
-# Install required dependencies
-pip install yt-dlp Pillow imageio-ffmpeg PyMuPDF python-dotenv
+```text
+TOPIC
+  ↓
+RESEARCH
+  ↓
+SCRIPT / STORY
+  ↓
+SARVAM NARRATION AUDIO
+  ↓
+EDITORIAL DIRECTOR
+  ↓
+SHOT / BEAT MANIFEST
+  ↓
+VISUAL DECISION ENGINE
+  ↓
+EXISTING ASSETS / GRAPHICS / MEMES / B-ROLL / HOST / VEO
+  ↓
+FRAME ANCHORS FOR VEO WHEN REQUIRED
+  ↓
+VEO GENERATION
+  ↓
+ACTUAL LAST-FRAME EXTRACTION
+  ↓
+CONTINUITY ENGINE
+  ↓
+DYNAMIC TIMELINE
+  ↓
+GOOGLE VIDS FINISHING
+  ↓
+VISUAL QC + EDITORIAL QC
+  ↓
+FINAL YOUTUBE VIDEO
 ```
 
-### Configure Environment Variables
-Copy `.env.example` to `.env`:
-```bash
-cp .env.example .env
-```
-Add your Sarvam AI API Key:
-```env
-SARVAM_API_KEY=your_sarvam_api_key_here
-```
+### Core production rule
+
+> **Narration → editorial intent → shot decision → asset → motion → cut → next shot**
+
+A scene is only a chapter/grouping. The actual production unit is a **shot/beat**, normally around 0.8–7 seconds depending on editorial purpose.
+
+The system must actively prevent:
+
+- static slideshow output
+- one image held for an entire narration block
+- zoom-only motion pretending to be editing
+- repetitive Hardik shots
+- repetitive graphics
+- irrelevant B-roll
+- random meme insertion
+- unnecessary Veo generation
+- QC reports that claim PASS without actually evaluating the condition
 
 ---
 
-## ⚡ Usage
+## 🎯 Target Channel Profile
 
-### 1. Test Sarvam AI Voiceover
-```bash
-python sarvam_audio_service.py
+- Platform: YouTube
+- Aspect ratio: 16:9
+- Delivery: 1080p minimum; 4K when source assets support it
+- Typical duration: 8–15 minutes
+- Languages: Hindi / Hinglish / English
+- Voice: Sarvam AI
+- Host: Hardik
+- Host representation: photorealistic AI-generated Hardik
+- Memes: enabled
+- Music: enabled
+- SFX: enabled
+
+The visual language should feel like a modern Indian explainer/documentary: conversational, investigative, energetic, evidence-led, cinematic where useful, and humorous when the story earns it.
+
+Reference creators/videos may inform **general editorial mechanics only**. Do not copy wording, scripts, catchphrases, branding, voice, thumbnails or distinctive identity.
+
+---
+
+## 🧍 Master Character Identity
+
+Authoritative files:
+
+- [CHARACTER_IDENTITY_LOCK.md](./CHARACTER_IDENTITY_LOCK.md)
+- [Master_Character_Identity_Reference.pdf](./Master_Character_Identity_Reference.pdf)
+- `character/MASTER_CHARACTER.md` when present
+
+Core law:
+
+> **Identity is immutable; scene variables are mutable.**
+
+Lock:
+
+- facial identity
+- skin characteristics
+- hair identity
+- facial-hair pattern
+- age appearance
+- body proportions
+- recognizable facial landmarks
+
+Allow scene-specific changes to:
+
+- clothing
+- environment
+- pose
+- camera
+- lighting
+- expression
+- accessories
+
+For important Veo shots, generate deliberate **start and end frame images** from the master identity plus the relevant multi-angle references. The generated video's **actual extracted last frame**, not the intended end frame, is the continuity authority for the next shot.
+
+---
+
+## 🎙️ Sarvam Audio
+
+Sarvam is the narration timing authority.
+
+The workflow generates narration before final visual timing, measures the actual audio duration, and uses word/phrase/block timing when available.
+
+The repository includes `sarvam_audio_service.py` for voice generation and caching. Existing audio should be reused whenever the narration input has not changed.
+
+---
+
+## 😂 Meme Intelligence
+
+Meme selection is editorial, not decorative.
+
+The canonical guide is:
+
+- [MEME_INTELLIGENCE_GUIDE.md](./MEME_INTELLIGENCE_GUIDE.md)
+
+Memes are selected from the available library using:
+
+```text
+narration trigger
+→ story beat
+→ emotion
+→ scenario
+→ meme taxonomy
+→ candidate ranking
+→ exact timing
+→ trim
+→ insert
 ```
 
-### 2. Build Full Documentary Video
-```bash
-python build_full_documentary_video.py
+A meme must have a clear narrative reason to exist and should normally be brief.
+
+---
+
+## 🎥 Visual Asset Strategy — Low Credit First
+
+The system should prefer the cheapest credible visual that communicates the idea:
+
+```text
+1. Existing reusable asset
+2. Existing footage / B-roll
+3. Screenshot / document / photograph
+4. Programmatic graphic
+5. Existing meme
+6. Reusable Hardik still/cutout
+7. New AI image
+8. Veo video
 ```
 
-### 3. Batch Download Reference Videos in 480p
-```bash
-python download_videos.py
-```
+Veo is reserved for visuals where motion, performance, cinematic composition or continuity materially improves the story.
+
+---
+
+## 📊 Editorial QC
+
+Before export, evaluate at minimum:
+
+- narration/visual relevance
+- shot density
+- visual variety
+- semantic repetition
+- host overuse
+- graphic overuse
+- static holds
+- meme relevance and timing
+- evidence usage
+- continuity where required
+- photorealism and identity consistency
+- audio/visual synchronization
+- transitions
+- music/SFX balance
+- resolution/aspect ratio
+
+QC must never fabricate a PASS. If a condition cannot actually be evaluated, report `NOT_EVALUATED` rather than pretending it passed.
+
+A pilot cut should be validated before scaling to an 8–15 minute production.
 
 ---
 
 ## 📂 Repository Structure
 
 ```text
-├── .agents/                          # Custom Antigravity / Claude Agent Skills
-│   ├── rules/                        # Permanent workspace rules & identity locks
-│   └── skills/                       # Installed production skills
-├── output/                           # Production deliverables & character assets
-│   ├── character_assets/             # Cropped master character portraits
-│   └── upi_is_scam_production/       # Complete UPI documentary package & manifest
-├── my research/                      # In-depth research papers & raw notes
-├── build_full_documentary_video.py   # Full automated video rendering pipeline
-├── download_videos.py                # Multi-URL 480p video downloader
-├── sarvam_audio_service.py           # Sarvam AI TTS caching & timing module
-├── CHARACTER_IDENTITY_LOCK.md        # Main onscreen explainer prompt lock
-├── MEME_INTELLIGENCE_GUIDE.md        # 248 video meme decision guide
-├── Master_Character_Identity_Reference.pdf # Visual reference master sheet
-├── .env.example                      # Template for API keys
-└── README.md                         # Project documentation
+├── .agents/
+│   ├── rules/
+│   │   └── character-identity.md
+│   └── skills/
+│       ├── hardik-editorial-video-factory/   # PRIMARY video skill
+│       ├── hardik-thumbnail-creation/         # thumbnail-only skill
+│       ├── hardik-youtube-description/        # description-only skill
+│       ├── hardik-youtube-title-engine/       # title/packaging skill
+│       ├── meme-intelligence-guide/           # meme taxonomy skill
+│       └── viral-documentary-script-engine/   # scriptwriting skill
+│
+├── output/
+├── character/
+├── research/
+├── script/
+├── manifest/
+├── scenes/
+├── ppt/
+├── memes/
+├── broll/
+├── music/
+├── sfx/
+├── timeline/
+├── qc/
+├── exports/
+│
+├── CHARACTER_IDENTITY_LOCK.md
+├── MEME_INTELLIGENCE_GUIDE.md
+├── Master_Character_Identity_Reference.pdf
+├── PHASE_3_6_IMPLEMENTATION.md
+├── sarvam_audio_service.py
+└── README.md
 ```
 
 ---
 
+## 🛠️ Setup
+
+Prerequisites:
+
+- Python 3.10+
+- FFmpeg (or `imageio-ffmpeg`)
+- Git
+
+Install the core dependencies as required by the active implementation.
+
+Configure Sarvam through `.env` using the repository's environment template.
+
+---
+
+## ⚠️ Important Migration Note
+
+The repository previously contained separate legacy video-factory and visual-director skills. Those duplicated the newer editorial architecture and could cause an AI coding agent to follow conflicting instructions. They have intentionally been removed.
+
+**Use `hardik-editorial-video-factory/SKILL.md` as the authoritative video-production skill.**
+
+The specialized title, description, thumbnail, meme and script skills remain because they represent distinct production functions rather than duplicate video-rendering instructions.
+
+---
+
 ## 📜 License
+
 MIT License. Created for Hardik's YouTube Automation Channel.
