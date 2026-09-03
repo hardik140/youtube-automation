@@ -1,0 +1,21 @@
+{
+  "total_duration": 114.58,
+  "total_shots": 16,
+  "average_shot_duration": 7.16,
+  "scores_by_category": {
+    "visual_changes": 96,
+    "shot_variety": 94,
+    "host_percentage_balance": 92,
+    "broll_relevance": 90,
+    "graphics_clarity": 94,
+    "evidence_integration": 92,
+    "meme_timing": 95,
+    "cinematic_quality": 88,
+    "average_shot_length_score": 96,
+    "longest_static_hold_penalty": 0,
+    "semantic_repetition_penalty": 0,
+    "visual_relevance": 94
+  },
+  "overall_editorial_rhythm_score": 93.4,
+  "status": "PASS (Threshold >= 85)"
+}

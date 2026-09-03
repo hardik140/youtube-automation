@@ -1,0 +1,8 @@
+SUBJECT: Hardik (Young Indian male, early 20s, warm medium-brown skin, oval face, defined jawline, dense wavy black hair, natural black beard)
+ACTION: How does Hardik pivot to the core economic root cause of bank underinvestment?
+CLOTHING: Tailored light grey blazer over open-collar shirt
+ENVIRONMENT: Modern tech studio with transaction analytics panels
+CAMERA: 85mm f/2.0, movement: slow_dolly_in
+MOOD: Analytical investigative documentary
+START FRAME: frames/SHOT_11_start_frame.png
+END FRAME INTENT: frames/SHOT_11_end_frame.png

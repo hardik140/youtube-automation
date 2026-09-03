@@ -1,0 +1,66 @@
+{
+  "platform": "Google Vids",
+  "project_name": "Controlled Pilot Test: Why UPI Changed How India Pays",
+  "aspect_ratio": "16:9",
+  "target_duration_seconds": 114.58,
+  "tracks": [
+    {
+      "track": 1,
+      "name": "Main Host Shots",
+      "items": [
+        "SHOT_01",
+        "SHOT_05",
+        "SHOT_11",
+        "SHOT_16"
+      ]
+    },
+    {
+      "track": 2,
+      "name": "B-Roll & Evidence",
+      "items": [
+        "SHOT_06",
+        "SHOT_09",
+        "SHOT_12"
+      ]
+    },
+    {
+      "track": 3,
+      "name": "Programmatic Graphics & Data",
+      "items": [
+        "SHOT_07",
+        "SHOT_13",
+        "SHOT_14"
+      ]
+    },
+    {
+      "track": 4,
+      "name": "UI Demo & Alerts",
+      "items": [
+        "SHOT_02",
+        "SHOT_03",
+        "SHOT_10"
+      ]
+    },
+    {
+      "track": 5,
+      "name": "Memes",
+      "items": [
+        "SHOT_04",
+        "SHOT_08",
+        "SHOT_15"
+      ]
+    },
+    {
+      "track": 6,
+      "name": "Narration Voice",
+      "file": "audio/narration_timed.wav"
+    },
+    {
+      "track": 7,
+      "name": "Ducked Background Score",
+      "file": "audio/documentary_ambient_tension.wav",
+      "ducking": "-16dB"
+    }
+  ],
+  "manual_action_required": "Import generated media into Google Vids landscape canvas; arrange track offsets according to manifest/pilot_shot_manifest.json."
+}

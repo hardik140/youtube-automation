@@ -1,0 +1,114 @@
+{
+  "project": "Controlled Pilot Test",
+  "total_shots": 16,
+  "total_duration": 114.58,
+  "visual_types": [
+    "DATA_VISUALIZATION",
+    "PHOTO",
+    "CINEMATIC_BROLL",
+    "HOST",
+    "ALERT",
+    "UI_DEMO",
+    "MEME",
+    "PROGRAMMATIC_GRAPHIC",
+    "DOCUMENT"
+  ],
+  "shots": [
+    {
+      "shot_id": "SHOT_01",
+      "type": "HOST",
+      "duration": 6.5,
+      "asset": "graphics/SHOT_01_clip.mp4"
+    },
+    {
+      "shot_id": "SHOT_02",
+      "type": "UI_DEMO",
+      "duration": 6.0,
+      "asset": "graphics/SHOT_02_clip.mp4"
+    },
+    {
+      "shot_id": "SHOT_03",
+      "type": "ALERT",
+      "duration": 7.0,
+      "asset": "graphics/SHOT_03_clip.mp4"
+    },
+    {
+      "shot_id": "SHOT_04",
+      "type": "MEME",
+      "duration": 2.0,
+      "asset": "memes/SHOT_04_VID-20240131-WA0006.mp4"
+    },
+    {
+      "shot_id": "SHOT_05",
+      "type": "HOST",
+      "duration": 7.0,
+      "asset": "graphics/SHOT_05_clip.mp4"
+    },
+    {
+      "shot_id": "SHOT_06",
+      "type": "CINEMATIC_BROLL",
+      "duration": 6.5,
+      "asset": "graphics/SHOT_06_clip.mp4"
+    },
+    {
+      "shot_id": "SHOT_07",
+      "type": "PROGRAMMATIC_GRAPHIC",
+      "duration": 6.5,
+      "asset": "graphics/SHOT_07_clip.mp4"
+    },
+    {
+      "shot_id": "SHOT_08",
+      "type": "MEME",
+      "duration": 2.5,
+      "asset": "memes/SHOT_08_Wah Kya Acting Kar Raha Hai.mp4"
+    },
+    {
+      "shot_id": "SHOT_09",
+      "type": "DOCUMENT",
+      "duration": 7.5,
+      "asset": "graphics/SHOT_09_clip.mp4"
+    },
+    {
+      "shot_id": "SHOT_10",
+      "type": "ALERT",
+      "duration": 7.0,
+      "asset": "graphics/SHOT_10_clip.mp4"
+    },
+    {
+      "shot_id": "SHOT_11",
+      "type": "HOST",
+      "duration": 8.0,
+      "asset": "graphics/SHOT_11_clip.mp4"
+    },
+    {
+      "shot_id": "SHOT_12",
+      "type": "PHOTO",
+      "duration": 8.0,
+      "asset": "graphics/SHOT_12_clip.mp4"
+    },
+    {
+      "shot_id": "SHOT_13",
+      "type": "DATA_VISUALIZATION",
+      "duration": 8.0,
+      "asset": "graphics/SHOT_13_clip.mp4"
+    },
+    {
+      "shot_id": "SHOT_14",
+      "type": "PROGRAMMATIC_GRAPHIC",
+      "duration": 9.0,
+      "asset": "graphics/SHOT_14_clip.mp4"
+    },
+    {
+      "shot_id": "SHOT_15",
+      "type": "MEME",
+      "duration": 2.2,
+      "asset": "memes/SHOT_15_VID-20240131-WA0007.mp4"
+    },
+    {
+      "shot_id": "SHOT_16",
+      "type": "HOST",
+      "duration": 20.88,
+      "asset": "graphics/SHOT_16_clip.mp4"
+    }
+  ]
+}
