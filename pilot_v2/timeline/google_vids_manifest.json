@@ -1,0 +1,74 @@
+{
+  "platform": "Google Vids",
+  "project_title": "UPI Scam Trial V2 - Editorial Cut",
+  "aspect_ratio": "16:9",
+  "resolution": "1920x1080",
+  "target_duration": 93.65,
+  "tracks": [
+    {
+      "track": 1,
+      "name": "Main Host Shots",
+      "items": [
+        "SHOT_01",
+        "SHOT_05",
+        "SHOT_11",
+        "SHOT_18"
+      ]
+    },
+    {
+      "track": 2,
+      "name": "B-Roll & Evidence",
+      "items": [
+        "SHOT_06",
+        "SHOT_09",
+        "SHOT_12"
+      ]
+    },
+    {
+      "track": 3,
+      "name": "Data Graphics & Presentations",
+      "items": [
+        "SHOT_07",
+        "SHOT_13",
+        "SHOT_14",
+        "SHOT_16",
+        "SHOT_17"
+      ]
+    },
+    {
+      "track": 4,
+      "name": "UI Demos & System Alerts",
+      "items": [
+        "SHOT_02",
+        "SHOT_03",
+        "SHOT_10"
+      ]
+    },
+    {
+      "track": 5,
+      "name": "Punctuation Memes",
+      "items": [
+        "SHOT_04",
+        "SHOT_08",
+        "SHOT_15"
+      ]
+    },
+    {
+      "track": 6,
+      "name": "Captions",
+      "file": "captions/captions.srt"
+    },
+    {
+      "track": 7,
+      "name": "Voiceover Narration",
+      "file": "audio/narration.wav"
+    },
+    {
+      "track": 8,
+      "name": "Ducked Background Score",
+      "file": "audio/documentary_ambient_tension.wav",
+      "ducking": "-16dB"
+    }
+  ],
+  "manual_action_required": "Import local assets into Google Vids landscape canvas; align tracks according to google_vids_manifest.json."
+}

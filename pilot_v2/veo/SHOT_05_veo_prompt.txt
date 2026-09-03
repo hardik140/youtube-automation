@@ -1,0 +1,8 @@
+SUBJECT: Hardik (Young Indian male, early 20s, warm medium-brown skin, oval face, defined jawline, dense wavy black hair, natural black beard)
+ACTION: How does Hardik explain why UPI settlement speed is unique?
+CLOTHING: Tailored light grey blazer over relaxed open-collar shirt
+ENVIRONMENT: Modern tech studio with transaction analytics panels
+CAMERA: 50mm f/1.8, movement: slow_dolly_in
+MOOD: Analytical investigative documentary
+START FRAME: pilot_v2/frames/SHOT_05_start_frame.png
+END FRAME INTENT: pilot_v2/frames/SHOT_05_end_frame.png

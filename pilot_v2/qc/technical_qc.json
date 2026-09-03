@@ -1,0 +1,12 @@
+{
+  "duration_seconds": 93.65,
+    "duration_check": "PASS (93.65s is precisely in the 90-120s window)",
+  "resolution": "1920x1080",
+  "aspect_ratio": "16:9",
+  "framerate": 30.0,
+  "audio_presence": "PASS (Narration + Ducked Background Music)",
+  "audio_clipping": "PASS (Normalized)",
+  "black_frames": "PASS (0 detected)",
+  "corrupted_frames": "PASS (0 detected)",
+  "overall_technical_status": "PASS"
+}

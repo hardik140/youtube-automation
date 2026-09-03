@@ -1,0 +1,311 @@
+[
+  {
+    "shot_id": "SHOT_01",
+    "scene_id": "SCENE_01",
+    "editorial_purpose": "HOOK",
+    "visual_question": "What puts the viewer directly into the everyday morning routine?",
+    "visual_type": "HOST",
+    "narration_text": "Imagine kariye: subah aap apne regular cafe ya kirana store pe jaate hain.",
+    "duration": 5.2,
+    "motion_type": "slow_dolly_in",
+    "camera": {
+      "shot": "medium_closeup",
+      "lens": "50mm f/1.8",
+      "movement": "slow_dolly_in"
+    },
+    "headline": "THE EVERYDAY MORNING ROUTINE",
+    "audio_event": "none"
+  },
+  {
+    "shot_id": "SHOT_02",
+    "scene_id": "SCENE_01",
+    "editorial_purpose": "EXPLAIN",
+    "visual_question": "How does the frictionless payment transaction look on screen?",
+    "visual_type": "UI_DEMO",
+    "narration_text": "\u20b920 ki chai ke liye aap phone nikaalte hain, QR scan karte hain, 6-digit UPI PIN daalte hain, aur payment Success ho jaata hai.",
+    "duration": 5.5,
+    "motion_type": "macro_pan_right",
+    "camera": {
+      "shot": "macro_closeup",
+      "lens": "85mm f/2.8",
+      "movement": "pan_right"
+    },
+    "headline": "INSTANT FRICTIONLESS SETTLEMENT (09:14 AM)",
+    "audio_event": "notification_chime"
+  },
+  {
+    "shot_id": "SHOT_03",
+    "scene_id": "SCENE_01",
+    "editorial_purpose": "REVEAL_SHOCK",
+    "visual_question": "What visual delivers the terrifying reality of an unexpected freeze?",
+    "visual_type": "ALERT",
+    "narration_text": "Lekin theek 4 ghante baad aapka bank account freeze ho jaata hai.",
+    "duration": 5.8,
+    "motion_type": "camera_shake",
+    "camera": {
+      "shot": "direct_flat",
+      "lens": "35mm",
+      "movement": "shake_impact"
+    },
+    "headline": "CRIME DIVISION: ALL DEBITS BLOCKED",
+    "audio_event": "bass_drop"
+  },
+  {
+    "shot_id": "SHOT_04",
+    "scene_id": "SCENE_01",
+    "editorial_purpose": "PUNCTUATION_MEME",
+    "visual_question": "What emotional beat releases tension and echoes viewer disbelief?",
+    "visual_type": "MEME",
+    "narration_text": "[CarryMinati: Yeh Kya Hai]",
+    "duration": 1.8,
+    "motion_type": "native_video",
+    "camera": {
+      "shot": "medium",
+      "lens": "native",
+      "movement": "static"
+    },
+    "headline": "CARRYMINATI: YEH KYA HAI",
+    "meme_file": "VID-20240131-WA0006.mp4",
+    "audio_event": "meme_native"
+  },
+  {
+    "shot_id": "SHOT_05",
+    "scene_id": "SCENE_04",
+    "editorial_purpose": "EXPLAIN_MECHANISM",
+    "visual_question": "How does Hardik explain why UPI settlement speed is unique?",
+    "visual_type": "HOST",
+    "narration_text": "Credit card mein transaction reverse ho sakta hai, lekin UPI ko banaya gaya tha irreversible teen second settlement ke liye.",
+    "duration": 5.5,
+    "motion_type": "slow_dolly_in",
+    "camera": {
+      "shot": "medium_closeup",
+      "lens": "50mm f/1.8",
+      "movement": "slow_dolly_in"
+    },
+    "headline": "THE IRREVERSIBLE 3-SECOND TRAP",
+    "audio_event": "none"
+  },
+  {
+    "shot_id": "SHOT_06",
+    "scene_id": "SCENE_04",
+    "editorial_purpose": "EVIDENCE_BROLL",
+    "visual_question": "What evidence shows how syndicates abuse velocity for extortion?",
+    "visual_type": "BROLL",
+    "narration_text": "Scam syndicates ne is speed ko ek weapon bana liya Digital Arrest aur fake CBI calls ke zariye.",
+    "duration": 5.2,
+    "motion_type": "slow_zoom_in",
+    "camera": {
+      "shot": "over_shoulder_terminal",
+      "lens": "35mm f/2.0",
+      "movement": "slow_zoom"
+    },
+    "headline": "DIGITAL ARREST: WEAPONIZED VELOCITY",
+    "audio_event": "glitch_whoosh"
+  },
+  {
+    "shot_id": "SHOT_07",
+    "scene_id": "SCENE_04",
+    "editorial_purpose": "DIAGRAM_PROCESS",
+    "visual_question": "How do automated mule bots disperse stolen money in under 60 seconds?",
+    "visual_type": "DIAGRAM",
+    "narration_text": "Automated bots fragment stolen funds across 100 mule accounts in 60 seconds.",
+    "duration": 4.5,
+    "motion_type": "pan_down",
+    "camera": {
+      "shot": "top_down_mesh",
+      "lens": "graphic",
+      "movement": "pan_down"
+    },
+    "headline": "LAYER 1-4 AUTOMATED MULE DISPERSAL MESH",
+    "audio_event": "tech_click"
+  },
+  {
+    "shot_id": "SHOT_08",
+    "scene_id": "SCENE_04",
+    "editorial_purpose": "PUNCTUATION_MEME",
+    "visual_question": "How do we ridicule the absurd staging of fake police video calls?",
+    "visual_type": "MEME",
+    "narration_text": "[Paresh Rawal: Wah Kya Acting Kar Raha Hai]",
+    "duration": 2.5,
+    "motion_type": "native_video",
+    "camera": {
+      "shot": "medium",
+      "lens": "native",
+      "movement": "static"
+    },
+    "headline": "PARESH RAWAL: WAH KYA ACTING KAR RAHA HAI",
+    "meme_file": "Wah Kya Acting Kar Raha Hai.mp4",
+    "audio_event": "meme_native"
+  },
+  {
+    "shot_id": "SHOT_09",
+    "scene_id": "SCENE_05",
+    "editorial_purpose": "EVIDENCE_STATUTE",
+    "visual_question": "What official legal standard is being violated by banks?",
+    "visual_type": "DOCUMENT",
+    "narration_text": "Jab victim helpline 1930 pe complain karta hai, statutory law ke mutabiq sirf disputed \u20b9500 pe lien lagna chahiye.",
+    "duration": 5.8,
+    "motion_type": "pan_right",
+    "camera": {
+      "shot": "document_macro",
+      "lens": "50mm",
+      "movement": "pan_right"
+    },
+    "headline": "STATUTORY MANDATE: LIEN ON DISPUTED \u20b9500 ONLY",
+    "audio_event": "paper_hit"
+  },
+  {
+    "shot_id": "SHOT_10",
+    "scene_id": "SCENE_05",
+    "editorial_purpose": "ALERT_FAILURE",
+    "visual_question": "What does the bank actually do to innocent citizens?",
+    "visual_type": "ALERT",
+    "narration_text": "Toh banks police notices se bachne ke liye disputed paanch sau rupaye ke bajaye poora bank account freeze kar dete hain.",
+    "duration": 6.2,
+    "motion_type": "slow_dolly_in",
+    "camera": {
+      "shot": "direct_flat",
+      "lens": "50mm",
+      "movement": "slow_dolly_in"
+    },
+    "headline": "ENFORCEMENT REALITY: 100% LIFE SAVINGS PARALYSIS",
+    "audio_event": "alert_tone"
+  },
+  {
+    "shot_id": "SHOT_11",
+    "scene_id": "SCENE_02",
+    "editorial_purpose": "EXPLAIN_PARADOX",
+    "visual_question": "How does Hardik pivot to the core economic root cause of bank underinvestment?",
+    "visual_type": "HOST",
+    "narration_text": "Ek physical sau rupaye ke note ko print karne ka cost RBI ko lagta hai lagbhag ek rupaya ikyavan paise.",
+    "duration": 6.0,
+    "motion_type": "slow_dolly_in",
+    "camera": {
+      "shot": "medium_closeup",
+      "lens": "85mm f/2.0",
+      "movement": "slow_dolly_in"
+    },
+    "headline": "THE ECONOMIC PARADOX: CASH VS SERVER SCALING",
+    "audio_event": "none"
+  },
+  {
+    "shot_id": "SHOT_12",
+    "scene_id": "SCENE_02",
+    "editorial_purpose": "EVIDENCE_PHOTO",
+    "visual_question": "What official data proves the physical cash amortization curve?",
+    "visual_type": "PHOTO",
+    "narration_text": "Yeh note teen saal mein teen sau baar exchange hota hai, toh har transaction ka cost padta hai sirf aadha paisa.",
+    "duration": 6.0,
+    "motion_type": "macro_pan_left",
+    "camera": {
+      "shot": "banknote_macro",
+      "lens": "100mm macro",
+      "movement": "pan_left"
+    },
+    "headline": "BRBNMPL PRINTING DATA: \u20b90.005 PER CASH EXCHANGE",
+    "audio_event": "cash_register"
+  },
+  {
+    "shot_id": "SHOT_13",
+    "scene_id": "SCENE_02",
+    "editorial_purpose": "GRAPHIC_DATA",
+    "visual_question": "How does digital transaction cost compare linearly at 300 exchanges?",
+    "visual_type": "CHART",
+    "narration_text": "Lekin teen sau digital UPI transactions ka server cost padta hai poore 600 rupaye.",
+    "duration": 6.0,
+    "motion_type": "pan_up",
+    "camera": {
+      "shot": "data_graph",
+      "lens": "clean_graphic",
+      "movement": "pan_up"
+    },
+    "headline": "LINEAR COST ESCALATION: \u20b91.51 CASH VS \u20b9600 UPI",
+    "audio_event": "server_hum"
+  },
+  {
+    "shot_id": "SHOT_14",
+    "scene_id": "SCENE_03",
+    "editorial_purpose": "PRESENTATION_CLIFF",
+    "visual_question": "What visual shows the 88% collapse in national infrastructure subsidies?",
+    "visual_type": "PRESENTATION",
+    "narration_text": "Pehle subsidy 3,500 crore thi, fir 2,000 crore, aur ab girkar sirf 427 crore reh gayi hai. Banks ke paas budget hi nahi bacha.",
+    "duration": 6.5,
+    "motion_type": "slow_zoom_in",
+    "camera": {
+      "shot": "presentation_bar",
+      "lens": "clean_slide",
+      "movement": "slow_zoom_in"
+    },
+    "headline": "NATIONAL SUBSIDY CLIFF: 88% FUNDING COLLAPSE",
+    "audio_event": "impact_thud"
+  },
+  {
+    "shot_id": "SHOT_15",
+    "scene_id": "SCENE_03",
+    "editorial_purpose": "PUNCTUATION_MEME",
+    "visual_question": "What meme captures the absolute evaporation of fraud prevention budgets?",
+    "visual_type": "MEME",
+    "narration_text": "[Rahul Gandhi: Khatam Tata Bye Bye]",
+    "duration": 2.2,
+    "motion_type": "native_video",
+    "camera": {
+      "shot": "medium",
+      "lens": "native",
+      "movement": "static"
+    },
+    "headline": "RAHUL GANDHI: KHATAM TATA BYE BYE",
+    "meme_file": "VID-20240131-WA0007.mp4",
+    "audio_event": "meme_native"
+  },
+  {
+    "shot_id": "SHOT_16",
+    "scene_id": "SCENE_06",
+    "editorial_purpose": "EVIDENCE_DUOPOLY",
+    "visual_question": "Who actually controls Indian retail payments?",
+    "visual_type": "SPLIT_SCREEN",
+    "narration_text": "Pachaasi percent transactions sirf do foreign funded companies control karti hain: PhonePe aur Google Pay.",
+    "duration": 6.2,
+    "motion_type": "slow_zoom_in",
+    "camera": {
+      "shot": "split_card",
+      "lens": "graphic",
+      "movement": "slow_zoom_in"
+    },
+    "headline": "THE 80% DUOPOLY CONCENTRATION",
+    "audio_event": "tech_click"
+  },
+  {
+    "shot_id": "SHOT_17",
+    "scene_id": "SCENE_06",
+    "editorial_purpose": "DIAGRAM_SURVEILLANCE",
+    "visual_question": "What non-transactional data is being harvested at every scan?",
+    "visual_type": "DIAGRAM",
+    "narration_text": "Har payment ke saath aapka GPS location, phone IMEI, aur poora social graph monitor ho raha hai.",
+    "duration": 6.2,
+    "motion_type": "pan_down",
+    "camera": {
+      "shot": "panopticon_grid",
+      "lens": "graphic",
+      "movement": "pan_down"
+    },
+    "headline": "NON-TRANSACTIONAL DATA HARVESTING (GPS & IMEI)",
+    "audio_event": "cyber_glitch"
+  },
+  {
+    "shot_id": "SHOT_18",
+    "scene_id": "SCENE_07",
+    "editorial_purpose": "CONCLUSION_CALL_TO_ACTION",
+    "visual_question": "How does Hardik empower viewers with 2026 survival directives?",
+    "visual_type": "HOST",
+    "narration_text": "Supreme Court ne ab temporary debit hold ka SOP diya hai. Apne aap ko bachaane ke liye Secondary buffer account use karein aur yaad rakhein UPI PIN sirf paise bhejne ke liye enter karein.",
+    "duration": 6.55,
+    "motion_type": "slow_dolly_out",
+    "camera": {
+      "shot": "medium_wide",
+      "lens": "50mm f/1.8",
+      "movement": "slow_dolly_out"
+    },
+    "headline": "THE 2026 SURVIVAL RULES: STAY PROTECTED",
+    "audio_event": "outro_swell"
+  }
+]

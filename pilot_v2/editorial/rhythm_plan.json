@@ -1,0 +1,18 @@
+{
+  "target_duration_seconds": 93.65,
+  "total_shots": 18,
+  "average_shot_duration": 5.2,
+  "visual_type_distribution": {
+    "HOST": 4,
+    "MEME": 3,
+    "UI_DEMO": 1,
+    "ALERT": 2,
+    "BROLL": 1,
+    "DIAGRAM": 2,
+    "DOCUMENT": 1,
+    "PHOTO": 1,
+    "CHART": 1,
+    "PRESENTATION": 1,
+    "SPLIT_SCREEN": 1
+  }
+}

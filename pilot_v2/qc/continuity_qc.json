@@ -1,0 +1,6 @@
+{
+  "host_facial_geometry": "PASS (Directly anchored to Master Character Reference Sheet)",
+  "wardrobe_continuity": "Tailored light grey blazer over open-collar shirt",
+  "start_end_frame_anchors": "PASS (Generated for all Host shots)",
+  "external_veo_api_call": "NOT_EVALUATED (Direct Veo API key not present in environment; deterministic camera motion executed)"
+}

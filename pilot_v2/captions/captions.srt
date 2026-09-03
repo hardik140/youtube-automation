@@ -1,0 +1,71 @@
+1
+00:00:00,000 --> 00:00:05,200
+Imagine kariye: subah aap apne regular cafe ya kirana store pe jaate hain.
+
+2
+00:00:05,200 --> 00:00:10,700
+₹20 ki chai ke liye aap phone nikaalte hain, QR scan karte hain, 6-digit UPI PIN daalte hain, aur payment Success ho jaata hai.
+
+3
+00:00:10,700 --> 00:00:16,500
+Lekin theek 4 ghante baad aapka bank account freeze ho jaata hai.
+
+4
+00:00:16,500 --> 00:00:18,300
+[CarryMinati: Yeh Kya Hai]
+
+5
+00:00:18,300 --> 00:00:23,800
+Credit card mein transaction reverse ho sakta hai, lekin UPI ko banaya gaya tha irreversible teen second settlement ke liye.
+
+6
+00:00:23,800 --> 00:00:29,000
+Scam syndicates ne is speed ko ek weapon bana liya Digital Arrest aur fake CBI calls ke zariye.
+
+7
+00:00:29,000 --> 00:00:33,500
+Automated bots fragment stolen funds across 100 mule accounts in 60 seconds.
+
+8
+00:00:33,500 --> 00:00:36,000
+[Paresh Rawal: Wah Kya Acting Kar Raha Hai]
+
+9
+00:00:36,000 --> 00:00:41,800
+Jab victim helpline 1930 pe complain karta hai, statutory law ke mutabiq sirf disputed ₹500 pe lien lagna chahiye.
+
+10
+00:00:41,800 --> 00:00:48,000
+Toh banks police notices se bachne ke liye disputed paanch sau rupaye ke bajaye poora bank account freeze kar dete hain.
+
+11
+00:00:48,000 --> 00:00:54,000
+Ek physical sau rupaye ke note ko print karne ka cost RBI ko lagta hai lagbhag ek rupaya ikyavan paise.
+
+12
+00:00:54,000 --> 00:01:00,000
+Yeh note teen saal mein teen sau baar exchange hota hai, toh har transaction ka cost padta hai sirf aadha paisa.
+
+13
+00:01:00,000 --> 00:01:06,000
+Lekin teen sau digital UPI transactions ka server cost padta hai poore 600 rupaye.
+
+14
+00:01:06,000 --> 00:01:12,500
+Pehle subsidy 3,500 crore thi, fir 2,000 crore, aur ab girkar sirf 427 crore reh gayi hai. Banks ke paas budget hi nahi bacha.
+
+15
+00:01:12,500 --> 00:01:14,700
+[Rahul Gandhi: Khatam Tata Bye Bye]
+
+16
+00:01:14,700 --> 00:01:20,900
+Pachaasi percent transactions sirf do foreign funded companies control karti hain: PhonePe aur Google Pay.
+
+17
+00:01:20,900 --> 00:01:27,100
+Har payment ke saath aapka GPS location, phone IMEI, aur poora social graph monitor ho raha hai.
+
+18
+00:01:27,100 --> 00:01:33,650
+Supreme Court ne ab temporary debit hold ka SOP diya hai. Apne aap ko bachaane ke liye Secondary buffer account use karein aur yaad rakhein UPI PIN sirf paise bhejne ke liye enter karein.

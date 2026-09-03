@@ -1,0 +1,8 @@
+SUBJECT: Hardik (Young Indian male, early 20s, warm medium-brown skin, oval face, defined jawline, dense wavy black hair, natural black beard)
+ACTION: What puts the viewer directly into the everyday morning routine?
+CLOTHING: Tailored light grey blazer over relaxed open-collar shirt
+ENVIRONMENT: Modern tech studio with transaction analytics panels
+CAMERA: 50mm f/1.8, movement: slow_dolly_in
+MOOD: Analytical investigative documentary
+START FRAME: pilot_v2/frames/SHOT_01_start_frame.png
+END FRAME INTENT: pilot_v2/frames/SHOT_01_end_frame.png

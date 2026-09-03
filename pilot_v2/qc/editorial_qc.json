@@ -1,0 +1,12 @@
+{
+  "hook_strength": "PASS (Direct everyday cafe scenario with instant stake)",
+  "visual_relevance": "PASS (Every sentence matched with direct visual equivalent)",
+  "shot_variety": "PASS (11 distinct visual types across 18 shots)",
+  "total_shots": 18,
+  "average_shot_duration": 5.2,
+  "longest_unchanged_visual": 6.55,
+  "host_percentage": "24.8% (Anchor presence, strictly below 35% guardrail)",
+  "staticity_check": "PASS (Zero static holds over 6.55s)",
+  "visual_redundancy": "PASS (Zero repeating identical consecutive visual types)",
+  "editorial_status": "PASS"
+}
