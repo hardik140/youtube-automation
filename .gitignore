@@ -1,0 +1,38 @@
+# Environment & Secrets
+.env
+.env.*
+!.env.example
+*.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.venv/
+env/
+venv/
+
+# Large Media & Video Files
+*.mp4
+*.m4v
+*.mkv
+*.webm
+*.avi
+*.mov
+*.wav
+*.mp3
+*.flac
+*.aac
+
+# Temporary & Download Directories
+downloaded_videos/
+250+ memes*
+output/**/temp_render/
+output/**/audio/
+output/**/final_video/*.mp4
+
+# OS Files
+Thumbs.db
+[Dd]esktop.ini
+.DS_Store

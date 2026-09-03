@@ -1,0 +1,119 @@
+{
+  "project_id": "upi_scam_documentary_01",
+  "title": "Why UPI is Becoming India's Biggest Financial Nightmare",
+  "target_duration_minutes": 13.5,
+  "master_character": {
+    "identity_prompt": "Young Indian male in his early 20s, warm medium-brown skin, oval-oblong face, defined natural jawline, thick dark straight eyebrows, dark brown deep-set eyes with calm confident expression, thick dense curly-wavy black hair with textured volume on top and short sides, naturally dense connected short black beard and moustache, lean-to-average athletic build, moderately broad shoulders. Photographed on 50mm-85mm portrait lens, natural realistic lighting.",
+    "signature_wardrobe": "Tailored light grey blazer with subtle check pattern over relaxed open-collar white shirt, straight dark trousers.",
+    "negative_prompt": "generic model face, overly smooth plastic skin, CGI look, beauty filter, exaggerated smile, aggressive expression, altered facial structure, clean-shaven, 3D render look."
+  },
+  "audio_configuration": {
+    "provider": "sarvam_ai",
+    "model": "bulbul:v3",
+    "primary_speaker": "aditya",
+    "language_code": "hi-IN"
+  },
+  "scenes": [
+    {
+      "scene_id": "scene_01_hook_the_3_second_trap",
+      "scene_type": "explainer_host",
+      "visual_description": "Hardik sitting at a modern dark wood studio desk, leaning forward with an urgent investigative gaze. Smartphone on the desk showing a simulated red banking error banner.",
+      "camera_lens": "50mm f/1.8",
+      "lighting": "Moody cinematic warm daylight key, subtle cool blue rim light",
+      "narration_text": "Imagine kariye: subah aap apne regular cafe ya kirana store pe jaate hain. \u20b920 ki chai ke liye aap phone nikaalte hain, QR scan karte hain, 6-digit UPI PIN daalte hain, aur payment Success ho jaata hai. Lekin theek 4 ghante baad aapka bank account freeze ho jaata hai.",
+      "meme_cutaway": {
+        "clip_file": "VID-20240131-WA0006.mp4",
+        "clip_name": "CarryMinati - Yeh Kya Hai",
+        "duration_seconds": 1.8
+      },
+      "audio_file": "e:\\youtube automation\\output\\upi_is_scam_production\\audio\\upi_scam_documentary_01_scene_01_hook_the_3_second_trap_aditya_d6bf31831b.wav",
+      "duration_seconds": 19.54
+    },
+    {
+      "scene_id": "scene_02_cash_amortization_math",
+      "scene_type": "whiteboard_infographic",
+      "visual_description": "Hardik standing next to an interactive glass whiteboard. On the left side, a \u20b9100 banknote with 0.005 Rs calculation; on the right, glowing server racks showing 600 Rs linear scaling.",
+      "camera_lens": "85mm f/2.0",
+      "lighting": "Documentary studio high key, clean crisp reflections",
+      "narration_text": "Ek physical sau rupaye ke note ko print karne ka cost RBI ko lagta hai lagbhag ek rupaya ikyavan paise. Yeh note teen saal mein teen sau baar exchange hota hai, toh har transaction ka cost padta hai sirf aadha paisa. Lekin teen sau digital UPI transactions ka server cost padta hai poore 600 rupaye.",
+      "meme_cutaway": {
+        "clip_file": "VID-20240221-WA0002.mp4",
+        "clip_name": "Akshay Kumar - Paisa Hi Paisa Hoga",
+        "duration_seconds": 2.0
+      },
+      "audio_file": "e:\\youtube automation\\output\\upi_is_scam_production\\audio\\upi_scam_documentary_01_scene_02_cash_amortization_math_aditya_6f7c728e13.wav",
+      "duration_seconds": 22.88
+    },
+    {
+      "scene_id": "scene_03_zero_mdr_subsidy_collapse",
+      "scene_type": "ppt_data_screen",
+      "visual_description": "Close-up of Hardik pointing towards a collapsing national subsidy chart dropping from 3500 crore to 427 crore.",
+      "camera_lens": "50mm f/2.2",
+      "lighting": "Contrast rich corporate audit lighting",
+      "narration_text": "Zero-MDR ki wajah se banks ko transactional fee lena legally mana hai. Pehle government subsidy deti thi 3,500 crore, fir 2,000 crore, aur ab subsidy girkar sirf 427 crore reh gayi hai. Banks ke paas fraud rokne ke liye budget hi nahi bacha.",
+      "meme_cutaway": {
+        "clip_file": "VID-20240131-WA0007.mp4",
+        "clip_name": "Rahul Gandhi - Khatam Tata Bye Bye",
+        "duration_seconds": 2.2
+      },
+      "audio_file": "e:\\youtube automation\\output\\upi_is_scam_production\\audio\\upi_scam_documentary_01_scene_03_zero_mdr_subsidy_collapse_aditya_8f115bf466.wav",
+      "duration_seconds": 21.33
+    },
+    {
+      "scene_id": "scene_04_digital_arrest_and_speed_weapon",
+      "scene_type": "investigative_broll",
+      "visual_description": "Split screen of cyber scam terminal on dark background and fake Skype video call showing impostor in police uniform.",
+      "camera_lens": "35mm f/2.0",
+      "lighting": "Dark moody terminal glow with emergency red flashes",
+      "narration_text": "Credit card mein transaction reverse ho sakta hai, lekin UPI ko banaya gaya tha irreversible teen second settlement ke liye. Scam syndicates ne is speed ko ek weapon bana liya Digital Arrest aur fake CBI calls ke zariye.",
+      "meme_cutaway": {
+        "clip_file": "Wah Kya Acting Kar Raha Hai.mp4",
+        "clip_name": "Paresh Rawal - Wah Kya Acting Kar Raha Hai",
+        "duration_seconds": 2.5
+      },
+      "audio_file": "e:\\youtube automation\\output\\upi_is_scam_production\\audio\\upi_scam_documentary_01_scene_04_digital_arrest_and_speed_weapon_aditya_2bd0dc0655.wav",
+      "duration_seconds": 15.79
+    },
+    {
+      "scene_id": "scene_05_innocent_account_freeze_1930",
+      "scene_type": "explainer_host",
+      "visual_description": "Hardik walking slowly in front of an animated node map showing stolen funds cascading into innocent shopkeeper and student accounts.",
+      "camera_lens": "50mm f/1.8",
+      "lighting": "Dramatic side lighting, cinematic lens flare",
+      "narration_text": "Jab victim helpline 1930 pe complain karta hai, toh banks police notices se bachne ke liye disputed paanch sau rupaye ke bajaye poora bank account freeze kar dete hain. Aur aapko doosre state jaakar NOC maangna padta hai.",
+      "meme_cutaway": {
+        "clip_file": "VID-20240223-WA0001.mp4",
+        "clip_name": "Vicky Kaushal - Yeh Dukh Kahe Khatam Nahi Hota",
+        "duration_seconds": 2.4
+      },
+      "audio_file": "e:\\youtube automation\\output\\upi_is_scam_production\\audio\\upi_scam_documentary_01_scene_05_innocent_account_freeze_1930_aditya_73136980e6.wav",
+      "duration_seconds": 18.94
+    },
+    {
+      "scene_id": "scene_06_surveillance_panopticon",
+      "scene_type": "graphics_broll",
+      "visual_description": "Holographic PhonePe and Google Pay logos with camera iris overlay mapping user GPS, IMEI, and personal financial social graph.",
+      "camera_lens": "50mm f/2.0",
+      "lighting": "Cyberpunk blue and red neon volumetric lighting",
+      "narration_text": "Pachaasi percent transactions sirf do foreign funded companies control karti hain. Har payment ke saath aapka GPS location, phone IMEI, aur poora social graph monitor ho raha hai.",
+      "meme_cutaway": {
+        "clip_file": "VID-20240229-WA0016.mp4",
+        "clip_name": "CID ACP Pradyuman - Kuch Toh Gadbad Hai",
+        "duration_seconds": 2.0
+      },
+      "audio_file": "e:\\youtube automation\\output\\upi_is_scam_production\\audio\\upi_scam_documentary_01_scene_06_surveillance_panopticon_aditya_6700ea4222.wav",
+      "duration_seconds": 13.23
+    },
+    {
+      "scene_id": "scene_07_2026_supreme_court_and_protection_rules",
+      "scene_type": "explainer_host",
+      "visual_description": "Hardik standing in bright, warm studio lighting presenting the 4 Golden Rules on clean graphic cards.",
+      "camera_lens": "85mm f/1.8",
+      "lighting": "Empowering warm studio lighting, clean rim highlights",
+      "narration_text": "Supreme Court ne ab temporary debit hold ka SOP diya hai aur RBI ne MuleHunter AI deploy kiya hai. Lekin apne aap ko bachaane ke liye char rules follow kijiye: Secondary buffer account use karein, kabhi stranger se cash swap na karein, aur yaad rakhein UPI PIN sirf paise bhejne ke liye hota hai.",
+      "meme_cutaway": null,
+      "audio_file": "e:\\youtube automation\\output\\upi_is_scam_production\\audio\\upi_scam_documentary_01_scene_07_2026_supreme_court_and_protection_rules_aditya_356debc47b.wav",
+      "duration_seconds": 21.69
+    }
+  ]
+}
