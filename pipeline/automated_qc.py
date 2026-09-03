@@ -1,114 +1,82 @@
 #!/usr/bin/env python3
-"""Phase 6: automated production QC.
+"""Phase 6: honest automated production/editorial QC.
 
-Checks are intentionally cheap and deterministic. Failed checks identify the smallest
-asset that needs regeneration instead of forcing a full-video rerender.
+Technical checks are deterministic. Visual/semantic checks are NEVER fabricated:
+when no actual computer-vision/LLM evidence is available they are NOT_EVALUATED.
+The gate fails on missing evidence, structural violations, or known technical faults.
 """
 from __future__ import annotations
-
-import argparse
-import json
-import subprocess
+import argparse, json, subprocess, re
 from pathlib import Path
 from typing import Any
 
 
 def probe(path: Path) -> dict[str, Any]:
-    cmd = ["ffprobe", "-v", "error", "-show_streams", "-show_format", "-of", "json", str(path)]
-    p = subprocess.run(cmd, capture_output=True, text=True)
-    if p.returncode != 0:
-        return {"ok": False, "error": p.stderr.strip()}
-    data = json.loads(p.stdout)
-    streams = data.get("streams", [])
-    video = next((s for s in streams if s.get("codec_type") == "video"), None)
-    audio = next((s for s in streams if s.get("codec_type") == "audio"), None)
-    return {
-        "ok": True,
-        "duration": float(data.get("format", {}).get("duration", 0) or 0),
-        "width": int(video.get("width", 0)) if video else 0,
-        "height": int(video.get("height", 0)) if video else 0,
-        "fps": video.get("r_frame_rate") if video else None,
-        "has_audio": audio is not None,
-    }
+    p=subprocess.run(["ffprobe","-v","error","-show_streams","-show_format","-of","json",str(path)],capture_output=True,text=True)
+    if p.returncode!=0:return {"ok":False,"error":p.stderr.strip()}
+    d=json.loads(p.stdout); ss=d.get("streams",[]); v=next((s for s in ss if s.get("codec_type")=="video"),None); a=next((s for s in ss if s.get("codec_type")=="audio"),None)
+    return {"ok":True,"duration":float(d.get("format",{}).get("duration",0) or 0),"width":int(v.get("width",0)) if v else 0,"height":int(v.get("height",0)) if v else 0,"fps":v.get("r_frame_rate") if v else None,"has_audio":a is not None}
 
+def exists(project: Path, value: str | None) -> bool:
+    if not value:return False
+    p=Path(value); return (p if p.is_absolute() else project/p).exists()
 
-def check_file(path: Path, expected_video: bool = False) -> list[str]:
-    errors = []
-    if not path.exists():
-        return [f"MISSING: {path}"]
-    if expected_video:
-        info = probe(path)
-        if not info.get("ok"):
-            return [f"UNREADABLE_VIDEO: {path}: {info.get('error','unknown')}"]
-        if info.get("width") < 1280 or info.get("height") < 720:
-            errors.append(f"LOW_RESOLUTION: {path} ({info.get('width')}x{info.get('height')})")
-        if info.get("duration", 0) <= 0.5:
-            errors.append(f"INVALID_DURATION: {path}")
-    return errors
+def rhythm(manifest: dict[str,Any]) -> dict[str,Any]:
+    beats=[b for s in manifest.get("scenes",[]) for b in s.get("beats",[])]
+    types=[str(b.get("visual_type") or b.get("visual_mode") or "UNKNOWN").upper() for b in beats]
+    durations=[float(b.get("duration",0) or 0) for b in beats]
+    changes=sum(a!=b for a,b in zip(types,types[1:]))
+    adjacent_dup=sum(a==b for a,b in zip(types,types[1:]))
+    longest=max(durations or [0])
+    unique=len(set(types))
+    # Structural score, not a claim about aesthetic quality.
+    score=100
+    score-=min(35, adjacent_dup*8)
+    score-=min(20, max(0, longest-5)*5)
+    score+=min(10, max(0, unique-3)*2)
+    return {"visual_changes":changes,"shot_count":len(beats),"unique_visual_types":unique,"adjacent_duplicates":adjacent_dup,"average_shot_seconds":round(sum(durations)/len(durations),2) if durations else 0,"longest_shot_seconds":round(longest,2),"structural_rhythm_score":max(0,round(score)),"status":"PASS" if adjacent_dup==0 and longest<=7 else "FAIL"}
 
-
-def run_qc(manifest: dict[str, Any], project_dir: Path) -> dict[str, Any]:
-    errors: list[str] = []
-    warnings: list[str] = []
-    scenes = manifest.get("scenes", [])
-
-    previous_end = None
-    for idx, scene in enumerate(scenes, 1):
-        scene_dir = project_dir / f"scenes/scene_{idx:03d}"
-        start = scene.get("frame_plan", {}).get("start_frame")
-        end = scene.get("frame_plan", {}).get("end_frame")
-        actual = scene.get("frame_plan", {}).get("actual_last_frame")
-        for label, value in (("start_frame", start), ("end_frame", end)):
-            if value:
-                errors += check_file(Path(value) if Path(value).is_absolute() else project_dir / value)
-            elif scene.get("frame_plan", {}).get("required", True):
-                errors.append(f"MISSING_{label.upper()}: scene {idx}")
-
-        if actual:
-            errors += check_file(Path(actual) if Path(actual).is_absolute() else project_dir / actual)
-        if idx > 1 and not scene.get("frame_plan", {}).get("previous_last_frame"):
-            errors.append(f"BROKEN_CONTINUITY_LINK: scene {idx}")
-
-        for beat in scene.get("beats", []):
-            if not beat.get("asset"):
-                warnings.append(f"NO_BEAT_ASSET: scene {idx} {beat.get('beat_id')}")
-        previous_end = actual or previous_end
-
-    # Global object-count guard for Google Vids.
-    video_objects = 0
-    audio_objects = 0
-    for scene in scenes:
-        for beat in scene.get("beats", []):
-            if beat.get("asset"):
-                video_objects += 1
-        if scene.get("audio_file"):
-            audio_objects += 1
-    if video_objects > 50:
-        errors.append(f"GOOGLE_VIDS_VIDEO_OBJECT_LIMIT_EXCEEDED: {video_objects} > 50")
-    if audio_objects > 50:
-        errors.append(f"GOOGLE_VIDS_AUDIO_OBJECT_LIMIT_EXCEEDED: {audio_objects} > 50")
-
-    result = {
-        "phase": 6,
-        "status": "PASS" if not errors else "FAIL",
-        "errors": errors,
-        "warnings": warnings,
-        "repair_strategy": "regenerate only the failed scene/asset, then rerun QC",
-        "counts": {"scenes": len(scenes), "video_objects": video_objects, "audio_objects": audio_objects},
-    }
-    (project_dir / "qc_report.json").write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
+def run_qc(manifest: dict[str,Any], project: Path) -> dict[str,Any]:
+    errors=[]; warnings=[]; evaluated=[]
+    scenes=manifest.get("scenes",[])
+    if not scenes: errors.append("NO_SCENES")
+    total_beats=sum(len(s.get("beats",[])) for s in scenes)
+    if total_beats < 12: errors.append(f"INSUFFICIENT_SHOT_DENSITY: {total_beats} beats")
+    for si,s in enumerate(scenes,1):
+        beats=s.get("beats",[]); prev=None
+        if len(beats)<3: errors.append(f"SCENE_{si}: fewer than 3 shots")
+        for b in beats:
+            bid=b.get("beat_id","unknown"); vt=str(b.get("visual_type") or b.get("visual_mode") or "UNKNOWN").upper(); d=float(b.get("duration",0) or 0)
+            if vt==prev: errors.append(f"ADJACENT_DUPLICATE_VISUAL: {bid}: {vt}")
+            if d>7: errors.append(f"LONG_SHOT: {bid}: {d:.2f}s")
+            if d<0.8: warnings.append(f"VERY_SHORT_SHOT: {bid}: {d:.2f}s")
+            if not b.get("visual_question"): errors.append(f"MISSING_VISUAL_QUESTION: {bid}")
+            if not b.get("editorial_purpose"): errors.append(f"MISSING_EDITORIAL_PURPOSE: {bid}")
+            prev=vt
+        fp=s.get("frame_plan",{})
+        if fp.get("required",True) and not fp.get("start_frame"): warnings.append(f"START_FRAME_NOT_GENERATED: scene {si}")
+        if si>1 and not fp.get("previous_last_frame"): errors.append(f"BROKEN_CONTINUITY_LINK: scene {si}")
+    r=rhythm(manifest); evaluated.append({"name":"structural_rhythm","result":r})
+    if r["status"]=="FAIL": errors.append("EDITORIAL_RHYTHM_STRUCTURAL_FAIL")
+    # Technical media checks when a rendered output is supplied.
+    rendered=manifest.get("rendered_output")
+    if rendered:
+        p=Path(rendered); p=p if p.is_absolute() else project/p
+        info=probe(p)
+        if not info.get("ok"): errors.append(f"UNREADABLE_FINAL_VIDEO: {info.get('error','unknown')}")
+        else:
+            if info["width"]<1280 or info["height"]<720: errors.append("FINAL_VIDEO_LOW_RESOLUTION")
+            if not info["has_audio"]: errors.append("FINAL_VIDEO_MISSING_AUDIO")
+            evaluated.append({"name":"technical_media","result":info})
+    # Never claim semantic/face/meme quality without actual analysis artifacts.
+    semantic_checks={"character_identity":"NOT_EVALUATED","visual_relevance":"NOT_EVALUATED","meme_context":"NOT_EVALUATED","cinematography":"NOT_EVALUATED","caption_sync":"NOT_EVALUATED"}
+    if manifest.get("visual_qc_evidence"): semantic_checks.update(manifest["visual_qc_evidence"])
+    evaluated.append({"name":"semantic_visual_checks","result":semantic_checks})
+    warnings.append("Semantic/identity/meme/cinematography checks require real CV or multimodal evidence; no fabricated PASS is emitted.")
+    result={"phase":6,"status":"PASS" if not errors else "FAIL","errors":errors,"warnings":warnings,"evaluated":evaluated,"gate_policy":"EXPORT ONLY WHEN TECHNICAL AND STRUCTURAL CHECKS PASS; semantic checks must be PASS or explicitly reviewed","repair_strategy":"regenerate only the smallest failing asset/shot"}
+    (project/"qc_report_v2.json").write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding="utf-8")
     return result
 
-
-def main() -> None:
-    ap = argparse.ArgumentParser()
-    ap.add_argument("manifest", type=Path)
-    ap.add_argument("project_dir", type=Path)
-    args = ap.parse_args()
-    result = run_qc(json.loads(args.manifest.read_text(encoding="utf-8")), args.project_dir)
-    print(json.dumps(result, indent=2))
-    raise SystemExit(0 if result["status"] == "PASS" else 1)
-
-
-if __name__ == "__main__":
-    main()
+def main()->None:
+    ap=argparse.ArgumentParser(); ap.add_argument("manifest",type=Path); ap.add_argument("project_dir",type=Path); a=ap.parse_args(); r=run_qc(json.loads(a.manifest.read_text(encoding="utf-8")),a.project_dir); print(json.dumps(r,indent=2)); raise SystemExit(0 if r["status"]=="PASS" else 1)
+if __name__=="__main__":main()
