@@ -1,0 +1,11 @@
+{
+  "scene_number": 7,
+  "scene_id": "scene_007",
+  "duration": 21.69,
+  "beats_count": 4,
+  "audio_file": "E:\\youtube automation\\pilot\\scenes\\scene_007\\voice.wav",
+  "video_file": "E:\\youtube automation\\pilot\\scenes\\scene_007\\video.mp4",
+  "start_frame": "E:\\youtube automation\\pilot\\scenes\\scene_007\\start_frame.png",
+  "end_frame": "E:\\youtube automation\\pilot\\scenes\\scene_007\\end_frame.png",
+  "actual_last_frame": "E:\\youtube automation\\pilot\\scenes\\scene_007\\last_frame.png"
+}

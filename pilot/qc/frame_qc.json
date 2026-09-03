@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "evaluated_scenes": 7,
+  "total_start_frames": 7,
+  "total_end_frames": 7,
+  "identity_stability": "PASS - 100% matched to Master Character Reference Sheet",
+  "clothing_continuity": "Tailored light grey blazer over open-collar shirt",
+  "aspect_ratio": "16:9",
+  "resolution": "1920x1080"
+}

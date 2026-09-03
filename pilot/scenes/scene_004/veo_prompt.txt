@@ -1,0 +1,12 @@
+SUBJECT: Hardik (Young Indian male, early 20s, warm medium-brown skin, oval-oblong face, defined jawline, dense curly-wavy black hair, natural short black beard)
+ACTION: UPI 3-second irreversible settlement contrasted with credit cards
+CLOTHING: Tailored light grey blazer over open-collar white shirt
+ENVIRONMENT: Modern tech studio desk with ultra-wide screens displaying transaction data
+CAMERA: 50mm portrait lens, subtle slow push-in motion
+LIGHTING: Cinematic warm daylight key with soft cyan/blue rim accent
+MOOD: Serious, analytical, investigative documentary
+PHYSICAL MOTION: Natural breathing, subtle hand gesture pointing to data, confident eye contact with camera
+START FRAME: pilot/scenes/scene_004/start_frame.png
+END FRAME INTENT: pilot/scenes/scene_004/end_frame.png
+CONTINUITY ANCHOR: pilot/scenes/scene_003/last_frame.png
+NEGATIVE PROMPT: generic model face, plastic skin, CGI, beauty filter, distorted hands, clean-shaven

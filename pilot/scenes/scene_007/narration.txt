@@ -1,0 +1,1 @@
+Supreme Court ne ab temporary debit hold ka SOP diya hai aur RBI ne MuleHunter AI deploy kiya hai. Lekin apne aap ko bachaane ke liye char rules follow kijiye: Secondary buffer account use karein, kabhi stranger se cash swap na karein, aur yaad rakhein UPI PIN sirf paise bhejne ke liye hota hai.

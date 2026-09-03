@@ -1,0 +1,11 @@
+{
+  "scene_id": "scene_003",
+  "video_exists": true,
+  "video_size_bytes": 2802330,
+  "audio_exists": true,
+  "start_frame_qc": "PASS",
+  "end_frame_qc": "PASS",
+  "last_frame_extracted": true,
+  "beats_rendered": true,
+  "continuity_anchor": "PASS"
+}

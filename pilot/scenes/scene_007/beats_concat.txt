@@ -1,0 +1,4 @@
+file 'E:/youtube automation/pilot/scenes/scene_007/beat_clip_01.mp4'
+file 'E:/youtube automation/pilot/scenes/scene_007/beat_clip_02.mp4'
+file 'E:/youtube automation/pilot/scenes/scene_007/beat_clip_03.mp4'
+file 'E:/youtube automation/pilot/scenes/scene_007/beat_clip_04.mp4'

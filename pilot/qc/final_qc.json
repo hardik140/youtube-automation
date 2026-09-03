@@ -1,0 +1,13 @@
+{
+  "overall_status": "PASS",
+  "output_video": "e:\\youtube automation\\pilot\\final\\pilot_video.mp4",
+  "file_size_bytes": 26073517,
+  "video_duration_seconds": 151.29999999999998,
+  "video_stream": "H.264 High Profile 1920x1080 @ 30fps",
+  "audio_stream": "AAC Stereo 44.1kHz with ducked tension bed",
+  "all_7_scenes_present": true,
+  "all_28_beats_present": true,
+  "memes_present": true,
+  "captions_generated": true,
+  "vids_manifest_ready": true
+}

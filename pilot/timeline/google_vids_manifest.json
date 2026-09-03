@@ -1,0 +1,321 @@
+{
+  "platform": "Google Vids",
+  "project_name": "UPI Scam Documentary Pilot",
+  "aspect_ratio": "16:9",
+  "resolution": "1920x1080",
+  "framerate": 30,
+  "tracks": [
+    {
+      "track_number": 1,
+      "track_name": "TRACK 1 \u2014 Main Scene Video",
+      "items": [
+        {
+          "scene_id": "scene_001",
+          "file": "scenes/scene_001/video.mp4",
+          "duration": 19.54
+        },
+        {
+          "scene_id": "scene_002",
+          "file": "scenes/scene_002/video.mp4",
+          "duration": 22.88
+        },
+        {
+          "scene_id": "scene_003",
+          "file": "scenes/scene_003/video.mp4",
+          "duration": 21.33
+        },
+        {
+          "scene_id": "scene_004",
+          "file": "scenes/scene_004/video.mp4",
+          "duration": 15.79
+        },
+        {
+          "scene_id": "scene_005",
+          "file": "scenes/scene_005/video.mp4",
+          "duration": 18.94
+        },
+        {
+          "scene_id": "scene_006",
+          "file": "scenes/scene_006/video.mp4",
+          "duration": 13.23
+        },
+        {
+          "scene_id": "scene_007",
+          "file": "scenes/scene_007/video.mp4",
+          "duration": 21.69
+        }
+      ]
+    },
+    {
+      "track_number": 2,
+      "track_name": "TRACK 2 \u2014 Visual Beats",
+      "items": [
+        {
+          "beat_id": "scene_001_beat_01",
+          "type": "HOST",
+          "duration": 4.88,
+          "asset": "pilot/scenes/scene_001/beat_01.png"
+        },
+        {
+          "beat_id": "scene_001_beat_02",
+          "type": "UI_DEMO",
+          "duration": 4.88,
+          "asset": "pilot/scenes/scene_001/beat_02.png"
+        },
+        {
+          "beat_id": "scene_001_beat_03",
+          "type": "ALERT",
+          "duration": 4.88,
+          "asset": "pilot/scenes/scene_001/beat_03.png"
+        },
+        {
+          "beat_id": "scene_001_beat_04",
+          "type": "HOST",
+          "duration": 4.9,
+          "asset": "pilot/scenes/scene_001/beat_04.png"
+        },
+        {
+          "beat_id": "scene_002_beat_01",
+          "type": "HOST",
+          "duration": 5.72,
+          "asset": "pilot/scenes/scene_002/beat_01.png"
+        },
+        {
+          "beat_id": "scene_002_beat_02",
+          "type": "PHOTO",
+          "duration": 5.72,
+          "asset": "pilot/scenes/scene_002/beat_02.png"
+        },
+        {
+          "beat_id": "scene_002_beat_03",
+          "type": "CHART",
+          "duration": 5.72,
+          "asset": "pilot/scenes/scene_002/beat_03.png"
+        },
+        {
+          "beat_id": "scene_002_beat_04",
+          "type": "PRESENTATION",
+          "duration": 5.72,
+          "asset": "pilot/scenes/scene_002/beat_04.png"
+        },
+        {
+          "beat_id": "scene_003_beat_01",
+          "type": "HOST",
+          "duration": 5.33,
+          "asset": "pilot/scenes/scene_003/beat_01.png"
+        },
+        {
+          "beat_id": "scene_003_beat_02",
+          "type": "CHART",
+          "duration": 5.33,
+          "asset": "pilot/scenes/scene_003/beat_02.png"
+        },
+        {
+          "beat_id": "scene_003_beat_03",
+          "type": "TEXT_CARD",
+          "duration": 5.33,
+          "asset": "pilot/scenes/scene_003/beat_03.png"
+        },
+        {
+          "beat_id": "scene_003_beat_04",
+          "type": "BROLL",
+          "duration": 5.34,
+          "asset": "pilot/scenes/scene_003/beat_04.png"
+        },
+        {
+          "beat_id": "scene_004_beat_01",
+          "type": "HOST",
+          "duration": 3.95,
+          "asset": "pilot/scenes/scene_004/beat_01.png"
+        },
+        {
+          "beat_id": "scene_004_beat_02",
+          "type": "BROLL",
+          "duration": 3.95,
+          "asset": "pilot/scenes/scene_004/beat_02.png"
+        },
+        {
+          "beat_id": "scene_004_beat_03",
+          "type": "DIAGRAM",
+          "duration": 3.95,
+          "asset": "pilot/scenes/scene_004/beat_03.png"
+        },
+        {
+          "beat_id": "scene_004_beat_04",
+          "type": "UI_DEMO",
+          "duration": 3.94,
+          "asset": "pilot/scenes/scene_004/beat_04.png"
+        },
+        {
+          "beat_id": "scene_005_beat_01",
+          "type": "DIAGRAM",
+          "duration": 4.74,
+          "asset": "pilot/scenes/scene_005/beat_01.png"
+        },
+        {
+          "beat_id": "scene_005_beat_02",
+          "type": "DOCUMENT",
+          "duration": 4.74,
+          "asset": "pilot/scenes/scene_005/beat_02.png"
+        },
+        {
+          "beat_id": "scene_005_beat_03",
+          "type": "ALERT",
+          "duration": 4.74,
+          "asset": "pilot/scenes/scene_005/beat_03.png"
+        },
+        {
+          "beat_id": "scene_005_beat_04",
+          "type": "MAP",
+          "duration": 4.72,
+          "asset": "pilot/scenes/scene_005/beat_04.png"
+        },
+        {
+          "beat_id": "scene_006_beat_01",
+          "type": "HOST",
+          "duration": 3.31,
+          "asset": "pilot/scenes/scene_006/beat_01.png"
+        },
+        {
+          "beat_id": "scene_006_beat_02",
+          "type": "SPLIT_SCREEN",
+          "duration": 3.31,
+          "asset": "pilot/scenes/scene_006/beat_02.png"
+        },
+        {
+          "beat_id": "scene_006_beat_03",
+          "type": "DIAGRAM",
+          "duration": 3.31,
+          "asset": "pilot/scenes/scene_006/beat_03.png"
+        },
+        {
+          "beat_id": "scene_006_beat_04",
+          "type": "PRESENTATION",
+          "duration": 3.3,
+          "asset": "pilot/scenes/scene_006/beat_04.png"
+        },
+        {
+          "beat_id": "scene_007_beat_01",
+          "type": "HOST",
+          "duration": 5.42,
+          "asset": "pilot/scenes/scene_007/beat_01.png"
+        },
+        {
+          "beat_id": "scene_007_beat_02",
+          "type": "TEXT_CARD",
+          "duration": 5.42,
+          "asset": "pilot/scenes/scene_007/beat_02.png"
+        },
+        {
+          "beat_id": "scene_007_beat_03",
+          "type": "TEXT_CARD",
+          "duration": 5.42,
+          "asset": "pilot/scenes/scene_007/beat_03.png"
+        },
+        {
+          "beat_id": "scene_007_beat_04",
+          "type": "HOST",
+          "duration": 5.43,
+          "asset": "pilot/scenes/scene_007/beat_04.png"
+        }
+      ]
+    },
+    {
+      "track_number": 3,
+      "track_name": "TRACK 3 \u2014 Memes",
+      "items": [
+        {
+          "scene_id": "scene_001",
+          "file": "memes/selected/meme_scene_01.mp4",
+          "duration": 2.2
+        },
+        {
+          "scene_id": "scene_002",
+          "file": "memes/selected/meme_scene_02.mp4",
+          "duration": 2.2
+        },
+        {
+          "scene_id": "scene_003",
+          "file": "memes/selected/meme_scene_03.mp4",
+          "duration": 2.2
+        },
+        {
+          "scene_id": "scene_004",
+          "file": "memes/selected/meme_scene_04.mp4",
+          "duration": 2.2
+        },
+        {
+          "scene_id": "scene_005",
+          "file": "memes/selected/meme_scene_05.mp4",
+          "duration": 2.2
+        },
+        {
+          "scene_id": "scene_006",
+          "file": "memes/selected/meme_scene_06.mp4",
+          "duration": 2.2
+        }
+      ]
+    },
+    {
+      "track_number": 4,
+      "track_name": "TRACK 4 \u2014 Graphics & Presentation Cards",
+      "items": [
+        {
+          "scene": "002",
+          "graphic": "Cash_vs_UPI_Linear_Math"
+        },
+        {
+          "scene": "003",
+          "graphic": "Subsidy_Cliff_Chart"
+        },
+        {
+          "scene": "005",
+          "graphic": "Lien_vs_Total_Freeze"
+        },
+        {
+          "scene": "006",
+          "graphic": "Duopoly_Market_Share"
+        },
+        {
+          "scene": "007",
+          "graphic": "4_Survival_Rules"
+        }
+      ]
+    },
+    {
+      "track_number": 5,
+      "track_name": "TRACK 5 \u2014 Text & Lower Thirds",
+      "items": [
+        {
+          "text": "HARDIK \u2022 TECH INVESTIGATOR",
+          "position": "top_right"
+        },
+        {
+          "text": "TOPIC HEADLINE",
+          "position": "top_left"
+        }
+      ]
+    },
+    {
+      "track_number": 6,
+      "track_name": "TRACK 6 \u2014 Captions",
+      "caption_file": "captions/captions.srt",
+      "webvtt_file": "captions/captions.vtt"
+    },
+    {
+      "track_number": 7,
+      "track_name": "TRACK 7 \u2014 Background Music",
+      "music_file": "audio/documentary_ambient_tension.wav",
+      "ducking": "-16dB under voiceover"
+    },
+    {
+      "track_number": 8,
+      "track_name": "TRACK 8 \u2014 SFX",
+      "sfx_events": [
+        "whoosh at scene transitions",
+        "glitch on alert blocks",
+        "bass drop on frozen notice"
+      ]
+    }
+  ]
+}

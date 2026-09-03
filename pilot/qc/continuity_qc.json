@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "continuity_chain": [
+    {
+      "from": "Master Reference",
+      "to": "Scene 001",
+      "status": "LINKED"
+    },
+    {
+      "from": "Scene 001 last_frame",
+      "to": "Scene 002",
+      "status": "LINKED"
+    },
+    {
+      "from": "Scene 002 last_frame",
+      "to": "Scene 003",
+      "status": "LINKED"
+    },
+    {
+      "from": "Scene 003 last_frame",
+      "to": "Scene 004",
+      "status": "LINKED"
+    },
+    {
+      "from": "Scene 004 last_frame",
+      "to": "Scene 005",
+      "status": "LINKED"
+    },
+    {
+      "from": "Scene 005 last_frame",
+      "to": "Scene 006",
+      "status": "LINKED"
+    },
+    {
+      "from": "Scene 006 last_frame",
+      "to": "Scene 007",
+      "status": "LINKED"
+    }
+  ]
+}
